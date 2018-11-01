@@ -1,68 +1,209 @@
-<div class="container main-page">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="header">
-        <%= image_tag "massage_banner.jpg", class: "header-img"%>
-        <h1>Annie's Amazing Massage</h1>
-        <h3>Your Best Massage Therapist in Milwaukee</h3>
-        <!-- <div class="profile-nav">
-          <div class=""><a href="#about_me" class="profile-nav-item">About Me</a></div>
-          <div class=""><a href="#what_i_offer" class="profile-nav-item">What I Offer</a></div>
-          <div class=""><a href="#price_hour" class="profile-nav-item">Prices & Hours</a></div>
-          <div class=""><a href="#location" class="profile-nav-item">Location</a></div>
-          <div class=""><a href="#contact" class="profile-nav-item">Contact</a></div>
-        </div> -->
+
+<body>
+  <!-- // Intro -->
+  <header id="about">
+    <a href="resume.pdf" download class="btn download">Download Resume</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work Experience</a>
+      <a href="#extra">Extracurricular Activities</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="content-wrap">
+      <%= image_tag "grad_pic1.jpg", class: "profile-img col-narrow"%>
+      <div class="col-wide">
+        <h1 class="myname">Yilin Tian</h1>
+        <h2 class="occupation">Business Analyst & World Explorer</h2>
+        <p class="introduction">I am a recent graduate from UCSD with a Bachelor's degree in math with a focus on business analytics. Besides my academic background, I am also a painter, traveler and bel canto singer!</p>
       </div>
     </div>
-  </div>
-  <div class="row main-content">
-     <div class="col-md-1"></div>
-     <div class="col-md-5">
-       <div class="section" id="about_me">
-         <h3>About Me</h3>
-         <p> My name is Annie. I am a licensed professional Asian message therapist experienced in therapeutic and relaxation massage.
-             I will offer you a miraculous massage experience you will not forget.
-         </p>
-       </div>
-       <div class="section">
-          <%= image_tag "header.jpg", class: "massage-img"%>
-       </div>
-     </div>
+  </header>
 
-     <div class="col-md-1"></div>
-     <div class="col-md-5">
-       <div class="section" id="contact">
-         <h3>Contact</h3>
-         <p>(414) 899-2764 (Please message for appointment)</p>
-       </div>
-       <div class="section" id="price_hour">
-         <h3>Prices</h3>
-         <ul>
-           <li>$35 / 30 mins </li>
-           <li>$50 / 60 mins</li>
-           <li>$70 / 90 mins</li>
-           <li>$90 / 120 mins</li>
-         </ul>
-       </div>
-       <div class="section">
-         <h3>Hours</h3>
-         <p>Monday through Sunday, 7:00 AM - 9:30 PM</p>
-       </div>
+  <main>
+    <!-- // Work Experience -->
+    <section id="work" class="work">
+      <div class="content-wrap">
+        <h2 class="experience">Work Experience</h2>
 
-       <div class="section" id="what_i_offer">
-         <h3>Provide</h3>
-         <ul>
-           <li>A clean and relaxing room with a professional massage table.</li>
-           <li>Massage skills not only for stress relief, but also soreness and pain reduction.</li>
-         </ul>
-       </div>
+        <!-- Job 1 Details -->
+        <div class="col-narrow">
+          <h3>Client's Service Representative</h3>
+          <p class="uppercase">Bank of America</p>
+          <p>Nov 2017 - Aug 2018</p>
+        </div>
 
-       <div class="section" id="location">
-         <h3>Location</h3>
-         <p>West Allis Area</p>
-         <%= image_tag "map.jpg", class: "map-img"%>
-       </div>
-     </div>
-  </div>
+        <div class="col-wide job-description">
+          <p>Responsibilities:</p>
+          <ul>
+              <li>Prepared daily balance sheet, CTR and MIS reports for goverment.</li>
+              <li>Handled operations in foreign currency exchange and provided excellent customer service.</li>
+              <li>Participated in daily discussion of BOA stock's oscillation, based on which to provide recommendation of company's financial products and services for clients, always meeting a 3% of monthly successful referral rate.</li>
+              <li>Performed routinely branch’s closing procedures.</li>
+          </ul>
+          <%= image_tag "boa1.jpg", class: "boa-img col-wide"%>
+        </div>
 
-</div>
+        <!-- Job 2 Details -->
+        <div class="col-narrow">
+          <h3>Co-Founder</h3>
+          <p class="uppercase">Feeling Education</p>
+          <p>May 2017 - Nov 2017</p>
+        </div>
+        <div class="col-wide job-description">
+          <p>Created an online matching platform, similar to Airbnb, to connect between Chinese students and foreign local tutors.</p>
+          <p>Key contributions:</p>
+          <ul>
+              <li>Created the promotion video in collaboration with the other co-founder from Stanford.</li>
+              <li>Organized weekly online meeting, delegated tasks to teammates and facilitated communication in the team.</li>
+              <li>Actively participated in fundraising events and startup accelerator programs at Stanford and connected with other entrepreneurs.</li>
+          </ul>
+
+          <p>Main page</p>
+          <%= image_tag "feelingedu3.jpg", class: "feeling-img col-medium"%>
+        </div>
+
+        <!-- Job 3 Details -->
+        <div class="col-narrow">
+          <h3>Financial Analyst Intern</h3>
+          <p class="uppercase">Johnson & Johnson</p>
+          <p>Jun 2016 - Sept 2016</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <p>Responsibilities:</p>
+          <ul>
+              <li>Performed gross profit analysis for equipment used for sterilization to ensure legal compliance.</li>
+              <li>Calculated service costs of capital machines.</li>
+              <li>Provided analytics to track cost improvement projects.</li>
+          </ul>
+        </div>
+
+        <!-- Job 3 Details -->
+        <div class="col-narrow">
+          <h3>Accounting Intern</h3>
+          <p class="uppercase">Harbin Jiaxin Tax Agent Office</p>
+          <p>Jun 2015 - Sept 2015</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <p>Responsibilities:</p>
+          <ul>
+              <li>Filed tax returns and prepared for governmental reports in compliance with strict standard.</li>
+              <li>Analyzed monthly balance sheet accounts for corporate reporting.</li>
+              <li>Cooperated with engineering, manufacturing and corporate accountants to verify the quality standards.</li>
+              <li>Modified a comprehensive financial reporting package to reflect growing organizational complexity.</li>
+          </ul>
+          <%= image_tag "accounting.jpg", class: "accounting-img col-medium"%>
+        </div>
+      </div>
+    </section>
+
+    <section id="extra" class="work">
+      <div class="content-wrap">
+        <h2 class="experience">Extracurricular Activities</h2>
+
+        <div class="col-narrow">
+          <h3>Bel Canto Singer</h3>
+          <p class="uppercase">Level 9 with certificate</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <p class="pho-text">Singing Competition at PCC!</p>
+          <%= image_tag "sing1.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "sing2.jpg", class: "pho-img col-medium"%>
+          <p>Check out my performance!</p>
+          <p>See promotion video at <a href="https://www.youtube.com/watch?v=YQHsXMglC9A" target="_blank">Bel Canto</a>.</p>
+          <!-- <div><img class="artwork-img col-medium" src="images/artwork.jpg" alt="artwork"></div> -->
+        </div>
+
+        <div class="col-narrow">
+          <h3>Painter</h3>
+          <p class="uppercase">Hobby</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <p class="pho-text">My Artworks!</p>
+          <%= image_tag "artwork.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "artwork2.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "artwork3.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "artwork4.jpg", class: "pho-img col-medium"%>
+        </div>
+
+        <div class="col-narrow">
+          <h3>Photographer</h3>
+          <p class="uppercase">Hobby</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <p class="pho-text">My Shots!</p>
+          <%= image_tag "pho1.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "pho2.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "pho3.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "pho4.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "pho5.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "pho6.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "pho7.jpg", class: "pho-img col-medium"%>
+          <%= image_tag "pho8.jpg", class: "pho-img col-medium"%>
+        </div>
+
+        <div class="col-narrow">
+          <h3>Traveler</h3>
+          <p class="uppercase">Hobby</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <p class="pho-text">San Diego</p>
+          <div><%= image_tag "sandiego.jpg", class: "pho-img col-medium"%></div>
+          <p class="pho-text">San Paris</p>
+          <div><%= image_tag "paris.jpg", class: "pho-img col-medium"%></div>
+          <p class="pho-text">Norway</p>
+          <div><%= image_tag "norway.jpg", class: "pho-img col-medium"%></div>
+          <p class="pho-text">Peru</p>
+          <div><%= image_tag "peru.jpg", class: "pho-img col-medium"%></div>
+          <p class="pho-text">Salt lake city</p>
+          <div><%= image_tag "saltlake.jpg", class: "pho-img col-medium"%></div>
+          <p class="pho-text">Morocco</p>
+          <div><%= image_tag "morocco3.jpg", class: "pho-img col-medium"%></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- // Education -->
+    <section id="education" class="education">
+      <div class="content-wrap">
+        <h2 class="experience">Education</h2>
+
+        <!-- School 1 details. -->
+        <h3>University of California, San Diego, La Jolla</h3>
+        <p>B.S. in Mathematics with a focus on business analytics, GPA 3.5/4.0</p>
+        <p>Important Courses: Numerical Analysis & Approximation, Mathematics of Finance, Mathematical Modeling, Computational Statistics, Computer Sciences</p>
+
+        <!-- School 2 details. -->
+        <h3>Pasadena City College - Pasadena, CA</h3>
+        <p>GPA: 3.86/4.00</p>
+        <p>General Education</p>
+
+        <!-- School 3 details. -->
+        <h3>Cypress College - Cypress, CA</h3>
+        <p>GPA: 4.0/4.0</p>
+        <p>General Education</p>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- // Footer & contact info -->
+  <footer id="contact">
+    <div class="content-wrap">
+      <h2>Let's Keep in Touch!</h2>
+
+      <!-- Social media links. Add or remove any networks. -->
+      <div class="contact-info">
+        <a href="mailto:yit027@ucsd.edu">yit027@ucsd.edu</a>
+        <a href="#">(262)366-3757</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
