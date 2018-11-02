@@ -15,7 +15,7 @@
       <div class="col-wide">
         <h1 class="myname">Yilin Tian</h1>
         <h2 class="occupation">Business Analyst & World Explorer</h2>
-        <p class="introduction">I am a recent graduate from UCSD with a Bachelor's degree in math with a focus on business analytics. Besides my academic background, I am also a painter, traveler and bel canto singer!</p>
+        <p class="introduction">I am a recent graduate from UCSD with a Bachelor's degree in math with a focus on business analytics. Besides my academic background, I am also a painter, traveler and Oprah singer!</p>
       </div>
     </div>
   </header>
@@ -104,16 +104,37 @@
         <h2 class="experience">Extracurricular Activities</h2>
 
         <div class="col-narrow">
-          <h3>Bel Canto Singer</h3>
+          <h3>Oprah Singer</h3>
           <p class="uppercase">Level 9 with certificate</p>
         </div>
 
         <div class="col-wide job-description">
           <p class="pho-text">Singing Competition at PCC!</p>
-          <%= image_tag "sing1.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "sing2.jpg", class: "pho-img col-medium"%>
+          <div id="myCarousel4" class="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel4" data-slide-to="1"></li>
+              <li data-target="#myCarousel4" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <%= image_tag "sing1.jpg", class: "d-block w-100 img-responsive", alt:"First slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "sing2.jpg", class: "d-block w-100 img-responsive", alt:"Second slide"%>
+              </div>
+
+            </div>
+            <a class="carousel-control left" href="#myCarousel4" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel4" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
+          <p></p>
           <p>Check out my performance!</p>
-          <p>See promotion video at <a href="https://www.youtube.com/watch?v=YQHsXMglC9A" target="_blank">Bel Canto</a>.</p>
+          <p>See my performance video at <a href="https://www.youtube.com/watch?v=YQHsXMglC9A" target="_blank">oprah</a>.</p>
           <!-- <div><img class="artwork-img col-medium" src="images/artwork.jpg" alt="artwork"></div> -->
         </div>
 
@@ -124,10 +145,34 @@
 
         <div class="col-wide job-description">
           <p class="pho-text">My Artworks!</p>
-          <%= image_tag "artwork.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "artwork2.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "artwork3.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "artwork4.jpg", class: "pho-img col-medium"%>
+          <div id="myCarousel3" class="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel3" data-slide-to="1"></li>
+              <li data-target="#myCarousel3" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <%= image_tag "artwork.jpg", class: "d-block w-100 img-responsive", alt:"First slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "artwork2.jpg", class: "d-block w-100 img-responsive", alt:"Second slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "artwork3.jpg", class: "d-block w-100 img-responsive", alt:"Third slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "artwork4.jpg", class: "d-block w-100 img-responsive", alt:"Fourth slide"%>
+              </div>
+
+            </div>
+            <a class="carousel-control left" href="#myCarousel3" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel3" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
         </div>
 
         <div class="col-narrow">
@@ -137,14 +182,45 @@
 
         <div class="col-wide job-description">
           <p class="pho-text">My Shots!</p>
-          <%= image_tag "pho1.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "pho2.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "pho3.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "pho4.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "pho5.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "pho6.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "pho7.jpg", class: "pho-img col-medium"%>
-          <%= image_tag "pho8.jpg", class: "pho-img col-medium"%>
+          <div id="myCarousel2" class="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel2" data-slide-to="1"></li>
+              <li data-target="#myCarousel2" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <%= image_tag "pho1.jpg", class: "d-block w-100 img-responsive", alt:"First slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "pho2.jpg", class: "d-block w-100 img-responsive", alt:"Second slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "pho3.jpg", class: "d-block w-100 img-responsive", alt:"Third slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "pho4.jpg", class: "d-block w-100 img-responsive", alt:"Fourth slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "pho5.jpg", class: "d-block w-100 img-responsive", alt:"Fifth slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "pho6.jpg", class: "d-block w-100 img-responsive", alt:"Six slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "pho7.jpg", class: "d-block w-100 img-responsive", alt:"Seventh slide"%>
+              </div>
+              <div class="item">
+                <%= image_tag "pho8.jpg", class: "d-block w-100 img-responsive", alt:"Eigth slide"%>
+              </div>
+            </div>
+            <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel2" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
         </div>
 
         <div class="col-narrow">
@@ -153,18 +229,58 @@
         </div>
 
         <div class="col-wide job-description">
-          <p class="pho-text">San Diego</p>
-          <div><%= image_tag "sandiego.jpg", class: "pho-img col-medium"%></div>
-          <p class="pho-text">San Paris</p>
-          <div><%= image_tag "paris.jpg", class: "pho-img col-medium"%></div>
-          <p class="pho-text">Norway</p>
-          <div><%= image_tag "norway.jpg", class: "pho-img col-medium"%></div>
-          <p class="pho-text">Peru</p>
-          <div><%= image_tag "peru.jpg", class: "pho-img col-medium"%></div>
-          <p class="pho-text">Salt lake city</p>
-          <div><%= image_tag "saltlake.jpg", class: "pho-img col-medium"%></div>
-          <p class="pho-text">Morocco</p>
-          <div><%= image_tag "morocco3.jpg", class: "pho-img col-medium"%></div>
+
+          <div id="myCarousel" class="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <%= image_tag "norway.jpg", class: "d-block w-100 img-responsive", alt:"First slide"%>
+                <div class="carousel-caption">
+                  <h3>Norway</h3>
+                </div>
+              </div>
+              <div class="item">
+                <%= image_tag "sandiego.jpg", class: "d-block w-100 img-responsive", alt:"Second slide"%>
+                <div class="carousel-caption">
+                  <h3>San Diego</h3>
+                </div>
+              </div>
+              <div class="item">
+                <%= image_tag "paris.jpg", class: "d-block w-100 img-responsive", alt:"Third slide"%>
+                <div class="carousel-caption">
+                  <h3>Paris</h3>
+                </div>
+              </div>
+              <div class="item">
+                <%= image_tag "morocco3.jpg", class: "d-block w-100 img-responsive", alt:"Six slide"%>
+                <div class="carousel-caption">
+                  <h3>Morocco</h3>
+                </div>
+              </div>
+              <div class="item">
+                <%= image_tag "saltlake.jpg", class: "d-block w-100 img-responsive", alt:"Seventh slide"%>
+                <div class="carousel-caption">
+                  <h3>Salt Lake city</h3>
+                </div>
+              </div>
+              <div class="item">
+                <%= image_tag "peru.jpg", class: "d-block w-100 img-responsive", alt:"Eigth slide"%>
+                <div class="carousel-caption">
+                  <h3>Peru</h3>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
         </div>
 
       </div>

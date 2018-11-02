@@ -58,3 +58,5 @@ gem 'pg'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass'
+gem 'bootstrap'
+gem 'jquery-rails'
