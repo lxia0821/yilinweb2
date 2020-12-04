@@ -33,12 +33,11 @@ gem 'sprockets', '~>3.7.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
-  gem 'byebug',  '9.0.0', platform: :mri
+  gem 'sqlite3'
 end
 
 group :production do
-  gem 'pg', '0.20.0'
+  gem 'pg'
 end
 
 group :development do
