@@ -32,13 +32,8 @@ gem 'sprockets', '~>3.7.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :development, :test do
-  gem 'sqlite3'
-end
 
-group :production do
-  gem 'pg'
-end
+gem 'pg'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
